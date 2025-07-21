@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+.navbar {
+  background-color: #00264d;
+  color: white;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.hero {
+  background: url('https://www.atacannakliyat.com/wp-content/uploads/2023/03/atacan-slider-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+.hero p {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+.service-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+footer {
+  background: #00264d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  0% {{ opacity: 0; }}
+  100% {{ opacity: 1; }}
+}
+@keyframes slideUp {
+  0% {{ transform: translateY(30px); opacity: 0; }}
+  100% {{ transform: translateY(0); opacity: 1; }}
+}
+@keyframes zoomIn {
+  0% {{ transform: scale(0.9); opacity: 0; }}
+  100% {{ transform: scale(1); opacity: 1; }}
+}
+.fade-in {{
+  animation: fadeIn 1.2s ease-out forwards;
+}}
+.slide-up {{
+  animation: slideUp 1s ease-out forwards;
+}}
+.zoom-in {{
+  animation: zoomIn 0.8s ease-out forwards;
+}}

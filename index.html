@@ -1,106 +1,68 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atacan Nakliyat - Profesyonel Taşımacılık</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body { margin: 0; font-family: 'Open Sans', sans-serif; background: #f4f4f4; color: #333; }
-    header { background: #0d1b2a; color: white; padding: 20px; text-align: center; }
-    nav { background: #1b263b; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
-    nav a { color: white; text-decoration: none; font-weight: 600; }
-    .slider img { width: 100%; height: 400px; object-fit: cover; }
-    .section { max-width: 1200px; margin: auto; padding: 40px 20px; }
-    .section h2 { color: #1a237e; font-size: 24px; margin-bottom: 20px; text-align: center; }
-    .cards, .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .card, .gallery img { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 300px; }
-    .card img, .gallery img { width: 100%; height: 180px; object-fit: cover; }
-    .card h3 { margin: 15px; color: #1a237e; }
-    .card p { margin: 0 15px 15px; color: #555; }
-    footer { background: #0d1b2a; color: white; text-align: center; padding: 20px 10px; }
-    .fixed-buttons { position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
-    .fixed-buttons a img { width: 48px; height: 48px; }
-    form { background: white; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; }
-    form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 6px; }
-    iframe { width: 100%; border: none; height: 300px; border-radius: 8px; }
-  </style>
+  <meta charset="UTF-8">
+  <title>Atacan Nakliyat | Profesyonel Evden Eve Taşımacılık</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="İstanbul içi ve şehirlerarası evden eve nakliyat, asansörlü taşımacılık, eşya depolama, sigortalı hizmetler. Atacan Nakliyat ile güvenli taşıma.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Atacan Nakliyat</h1>
-  <p>Profesyonel & Sigortalı Taşımacılık</p>
-</header>
+  <nav class="navbar" style="padding: 15px 30px;">
+    <strong style="font-size: 22px;">Atacan Nakliyat</strong>
+    <span style="float:right;">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#iletisim">İletişim</a>
+    </span>
+  </nav>
 
-<nav>
-  <a href="#">Anasayfa</a>
-  <a href="#hizmetler">Hizmetler</a>
-  <a href="#galeri">Referanslar</a>
-  <a href="#harita">Konum</a>
-  <a href="#form">Randevu</a>
-</nav>
+  <div class="hero fade-in">
+    <h1>Profesyonel Taşımacılığın Tek Adresi</h1>
+    <p>Evden Eve Nakliyat • Şehirlerarası Taşıma • Eşya Depolama</p>
+    <p><strong>%30 Yaz İndirimi Fırsatını Kaçırmayın!</strong></p>
+  </div>
 
-<div class="slider">
-  <img src="https://images.unsplash.com/photo-1600488990442-56cbd785d5d6?fit=crop&w=1500&q=80" alt="Slider">
-</div>
+  <section id="hakkimizda" class="slide-up" class="services" style="background:#eef2f3;">
+    <div style="max-width:800px; margin:auto; padding:30px; text-align:center;">
+      <h2>Hakkımızda</h2>
+      <p>Atacan Nakliyat, K3 Yetki Belgeli, sigortalı ve profesyonel taşıma çözümleri sunan İstanbul merkezli bir taşımacılık firmasıdır. Deneyimli kadrosu ve modern araç filosuyla hizmet verir.</p>
+    </div>
+  </section>
 
-<section class="section" id="hizmetler">
-  <h2>Hizmetlerimiz</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600488600739-c58f5a15523c?fit=crop&w=800&q=80" alt="Evden Eve">
+  <section id="hizmetler" class="zoom-in" class="services">
+    <div class="service-card">
       <h3>Evden Eve Nakliyat</h3>
-      <p>İstanbul içi ve şehirlerarası taşımacılık sigortalı şekilde yapılır.</p>
+      <p>Ambalajlama, söküm-kurulum, sigortalı taşıma hizmetiyle eşyalarınızı güvenle taşıyoruz.</p>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?fit=crop&w=800&q=80" alt="Ofis Taşımacılığı">
-      <h3>Ofis Taşımacılığı</h3>
-      <p>Kurumsal taşımacılıkta planlı, belgeli ve hızlı hizmet sağlanır.</p>
+    <div class="service-card">
+      <h3>Asansörlü Taşımacılık</h3>
+      <p>Yüksek katlı binalarda zaman kaybetmeden ve hasarsız taşıma için dış asansör sistemimiz hizmetinizde.</p>
     </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1621976495207-2b35ecb9cc1f?fit=crop&w=800&q=80" alt="Depolama">
+    <div class="service-card">
       <h3>Eşya Depolama</h3>
-      <p>Depolama hizmetimizde anahtarlı, güvenli ve sigortalı alanlar sunulur.</p>
+      <p>2300 m² kapalı, 7/24 güvenlikli, anahtarlı eşya depolarımızda güvenle saklayın.</p>
     </div>
-  </div>
-</section>
+    <div class="service-card">
+      <h3>Şehirlerarası Nakliyat</h3>
+      <p>Tüm Türkiye geneline profesyonel ve zamanında taşımacılık hizmeti sunuyoruz.</p>
+    </div>
+  </section>
 
-<section class="section" id="galeri">
-  <h2>Referanslarımız</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1616627985662-3386b1e6d174?fit=crop&w=800&q=80" alt="Referans">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?fit=crop&w=800&q=80" alt="Referans">
-    <img src="https://images.unsplash.com/photo-1581093458791-5c146f59a1e9?fit=crop&w=800&q=80" alt="Referans">
-  </div>
-</section>
+  <section id="iletisim" class="fade-in" class="services" style="background:#eef2f3;">
+    <div style="max-width:800px; margin:auto; padding:30px; text-align:center;">
+      <h2>İletişim</h2>
+      <p><strong>Telefon:</strong> <a href="tel:+905053845273">0505 384 52 73</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/905053845273" target="_blank">Hemen Mesaj Gönder</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/atacannakliyatt" target="_blank">@atacannakliyatt</a></p>
+      <p><strong>Depo Adresleri:</strong> İkitelli / Avcılar / Ümraniye</p>
+    </div>
+  </section>
 
-<section class="section" id="harita">
-  <h2>Konumumuz</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12042.164759973662!2d28.9744!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNDHCsDAwJzI5LjUiTiAyOMKwNTgnMjcuMSJF!5e0!3m2!1str!2str!4v1629384231819!5m2!1str!2str" allowfullscreen="" loading="lazy"></iframe>
-</section>
-
-<section class="section" id="form">
-  <h2>Randevu Formu</h2>
-  <form>
-    <input type="text" placeholder="Ad Soyad" required />
-    <input type="tel" placeholder="Telefon" required />
-    <input type="email" placeholder="E-posta" required />
-    <textarea rows="4" placeholder="Mesajınız"></textarea>
-    <button type="submit">Gönder</button>
-  </form>
-</section>
-
-<footer>
-  <p>📞 <a href="tel:+905053845273" style="color:white;">0505 384 52 73</a> | 📸 <a href="https://instagram.com/atacannakliyatt" target="_blank" style="color:white;">@atacannakliyatt</a></p>
-  <p>&copy; 2025 Atacan Nakliyat. Tüm Hakları Saklıdır.</p>
-</footer>
-
-<div class="fixed-buttons">
-  <a href="tel:+905053845273"><img src="https://img.icons8.com/fluency/48/phone.png" alt="Ara"></a>
-  <a href="https://instagram.com/atacannakliyatt" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
-  <a href="https://wa.me/905053845273" target="_blank"><img src="https://img.icons8.com/fluency/48/whatsapp.png" alt="WhatsApp"></a>
-</div>
+  <footer>
+    <p>&copy; 2025 Atacan Nakliyat | K3 Belgeli Sigortalı Taşımacılık</p>
+  </footer>
 
 </body>
 </html>
